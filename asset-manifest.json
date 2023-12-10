@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/mnsmrn-web-portfolio/static/css/main.4fb96f2a.css",
-    "main.js": "/mnsmrn-web-portfolio/static/js/main.f5276815.js",
+    "main.js": "/mnsmrn-web-portfolio/static/js/main.0d1d63d9.js",
     "static/js/787.b6da028a.chunk.js": "/mnsmrn-web-portfolio/static/js/787.b6da028a.chunk.js",
     "static/media/charity-water.png": "/mnsmrn-web-portfolio/static/media/charity-water.6c26f45e17fcb6581243.png",
     "static/media/noz.png": "/mnsmrn-web-portfolio/static/media/noz.2961bfec89d8cb99ffb7.png",
     "static/media/logo.svg": "/mnsmrn-web-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/mnsmrn-web-portfolio/index.html",
     "main.4fb96f2a.css.map": "/mnsmrn-web-portfolio/static/css/main.4fb96f2a.css.map",
-    "main.f5276815.js.map": "/mnsmrn-web-portfolio/static/js/main.f5276815.js.map",
+    "main.0d1d63d9.js.map": "/mnsmrn-web-portfolio/static/js/main.0d1d63d9.js.map",
     "787.b6da028a.chunk.js.map": "/mnsmrn-web-portfolio/static/js/787.b6da028a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4fb96f2a.css",
-    "static/js/main.f5276815.js"
+    "static/js/main.0d1d63d9.js"
   ]
 }
