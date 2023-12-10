@@ -7,7 +7,7 @@ import NozImg from "../assets/noz.png";
 export const MainContent = () => {
   const [navBarHeight, setNavBarHeight] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
-  const textArray = ["Hi!", "Hola!", "Salut!", "Ciao!"];
+  const textArray = ["Hi!", "Hola!"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,20 +48,14 @@ export const MainContent = () => {
     >
       {/* ========= LINKS TO STUFF ========== */}
       <section className="important-links">
-        <button className="link-btn">
-          <a href={resumeURL} target="_blank" rel="noopener noreferrer">
-            Resume
-          </a>
+        <button className="link-btn" onClick={() => openLinkInNewTab(resumeURL)}>
+            Resume        
         </button>
-        <button className="link-btn">
-          <a href={coverLetterURL} target="_blank" rel="noopener noreferrer">
+        <button className="link-btn" onClick={() => openLinkInNewTab(coverLetterURL)}>
             Cover Letter
-          </a>
         </button>
-        <button className="link-btn">
-          <a href={linkedInURL} target="_blank" rel="noopener noreferrer">
+        <button className="link-btn" onClick={() => openLinkInNewTab(linkedInURL)}>
             LinkedIn
-          </a>
         </button>
       </section>
 
