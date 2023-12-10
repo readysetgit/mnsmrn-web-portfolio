@@ -4,9 +4,10 @@ import "./Navbar.scss";
 function Navbar() {
 
     const [textSize, setTextSize] = useState(100);
-    const [paddingLeft, setPaddingLeft] = useState(20);
+    // const [paddingLeft, setPaddingLeft] = useState(20);
     const [textPosition, setTextPosition] = useState("fixed");
-    const [textMarginTop, setMarginTop] = useState(100);
+    const [textPaddingTop, setPaddingTop] = useState(100);
+
     const [nameText, setNameText] = useState("monse merino");
     const maxPageOffset = 100;
 
@@ -20,15 +21,15 @@ function Navbar() {
     const handleScroll = () => {
       if (window.pageYOffset > maxPageOffset) {
         setTextSize(16);
-        setPaddingLeft(0)
-        setMarginTop(10)
+        // setPaddingLeft(0)
+        setPaddingTop(10)
         setNameText(`mnsmrn`)
 
       } else {
 
         setTextSize(100 - (window.pageYOffset)*84/maxPageOffset );
-        setPaddingLeft(10 - (window.pageYOffset)*10/maxPageOffset   )
-        setMarginTop(120 - (window.pageYOffset)*110/maxPageOffset   )
+        // setPaddingLeft(10 - (window.pageYOffset)*10/maxPageOffset   )
+        setPaddingTop(120 - (window.pageYOffset)*110/maxPageOffset   )
 
          
         if (window.pageYOffset > 0.8*maxPageOffset) {
@@ -46,15 +47,25 @@ function Navbar() {
       }
     };
 
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    };
+
         return (
-            <React.Fragment>
-                <div className='title-box'>
-                <h1 className="monse-merino" style={{ fontSize: `${textSize}px`, position: `${textPosition}`, paddingLeft: `${paddingLeft}%`, marginTop: `${textMarginTop}px` }}>
-                    {nameText}
-                </h1>
-                {/* <div class="divider mtxl"></div> */}          
-            </div>
-            </React.Fragment>
+    <div className="navbar-container">
+      <div className='title-box'>
+        <h1
+          className="monse-merino"
+          style={{ fontSize: `${textSize}px`, position: `${textPosition}`, margin: 'auto', paddingTop: `${textPaddingTop}px` }}
+          onClick={scrollToTop}
+        >
+          {nameText}
+        </h1>
+      </div>
+    </div>
             
         );
 }
