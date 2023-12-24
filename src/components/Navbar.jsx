@@ -59,7 +59,7 @@ function Navbar() {
       <div className='title-box'>
         <h1
           className="monse-merino"
-          style={{ fontSize: `${textSize}px`, position: `${textPosition}`, margin: 'auto', paddingTop: `${textPaddingTop}px` }}
+          style={{ fontSize: `${textSize}px`, position: `${textPosition}`, margin: 'auto', }}
           onClick={scrollToTop}
         >
           {nameText}
