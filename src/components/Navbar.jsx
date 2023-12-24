@@ -22,14 +22,14 @@ function Navbar() {
       if (window.pageYOffset > maxPageOffset) {
         setTextSize(16);
         // setPaddingLeft(0)
-        setPaddingTop(10)
+        // setPaddingTop(10)
         setNameText(`mnsmrn`)
 
       } else {
 
         setTextSize(100 - (window.pageYOffset)*84/maxPageOffset );
         // setPaddingLeft(10 - (window.pageYOffset)*10/maxPageOffset   )
-        setPaddingTop(120 - (window.pageYOffset)*110/maxPageOffset   )
+        // setPaddingTop(120 - (window.pageYOffset)*110/maxPageOffset   )
 
          
         if (window.pageYOffset > 0.8*maxPageOffset) {
